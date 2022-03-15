@@ -1,9 +1,20 @@
 # IC-BactTracker-heatmap
 
-This project is used in combination with <a href="https://github.com/bkeith20/IC-bact-tracker-2018">IC-bact-tracker-2018</a> to display data collected with the application.
+This project was originally for use in combination with <a href="https://github.com/bkeith20/IC-bact-tracker-2018">IC-bact-tracker-2018</a> to display data collected with the application.
 
 The heatmap allows for filtering of data collected by bacteria classifications, resistances to different medications found in the samples, as well as when the samples were collected. The application allowed for viewing of the heatmap through the use of a webview.
 
-To use this heatmap, other.js will need to be edited to access the PHP file hosted on a different server or to access the data in a different manner. The current PHP file is set to randomly generate bacteria classifications and resistances for a set of 500 coordinates around Ithaca College. 
+![image](https://user-images.githubusercontent.com/33661898/158398119-516ca6d5-225a-4ab6-bf92-103ab4cba4ee.png)
+
+![image](https://user-images.githubusercontent.com/33661898/158398202-c2445d3a-931e-4213-a687-5d63b2ed6275.png)
+
+The page is also responsive!
+
+![image](https://user-images.githubusercontent.com/33661898/158398525-877575e1-1806-4872-8e30-7eb03bf4d1b4.png)
+
+![image](https://user-images.githubusercontent.com/33661898/158398599-975df3e6-052a-42d2-b35e-192e7b5e17d6.png)
+
+Currently the geospatial data is hardcoded in getData.js with the classifications, resistances, and dates all randomly generated.
+In practive, getData would be modified to pull data from a server.
 
 This project also includes the python script used to generate the random coordinates in the desired area.
